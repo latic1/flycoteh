@@ -111,81 +111,65 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Section with Background Images and Content */}
       <section className="bg-white py-10 sm:py-16 lg:py-24">
-        <div className="h-[500px]">
+        <div className="">
           <div className="grid h-full grid-cols-1 gap-5 md:grid-cols-5 md:gap-0">
             {/* Background Image for Large Screens */}
             <div
-              className="col-span-2 hidden bg-[url('/images/professional-architect-woman-standing-outdoors-NDAEJH5.jpg')] bg-cover bg-center md:block"
+              className="col-span-2 hidden h-[500px] bg-[url('/images/professional-architect-woman-standing-outdoors-NDAEJH5.jpg')] bg-cover bg-center md:block"
               aria-hidden="true"
             ></div>
 
             {/* Research & Analysis Section */}
-            <div className="group relative h-[300px] w-full bg-[url('/images/industrial-landscape-building-crane-against-the-bl-8T3EXGK.png')] bg-cover p-8 sm:h-[400px] md:h-full">
-              <div className="absolute inset-0 bg-blue-700/50 transition duration-300 group-hover:bg-black/70"></div>
-              <div className="relative z-10 flex h-full flex-col justify-between text-white">
-                <div>
-                  <h3 className="text-3xl font-semibold">
-                    Research & Analysis
-                  </h3>
-                  <p className="mt-4">
-                    Explore in-depth studies and innovative solutions tailored
-                    for your projects.
-                  </p>
+            {[
+              {
+                title: "Research & Analysis",
+                description:
+                  "Explore in-depth studies and innovative solutions tailored for your projects.",
+                bgImage:
+                  "/images/industrial-landscape-building-crane-against-the-bl-8T3EXGK.png",
+              },
+              {
+                title: "Industry Development",
+                description:
+                  "Stay ahead with the latest trends and developments in the construction industry.",
+                bgImage:
+                  "/images/industrial-landscape-building-crane-against-the-bl-8T3EXGK.png",
+              },
+              {
+                title: "Production Launch",
+                description:
+                  "Get ready for a seamless launch with our comprehensive production strategies.",
+                bgImage:
+                  "/images/industrial-landscape-building-crane-against-the-bl-8T3EXGK.png",
+              },
+            ].map((section, index) => (
+              <div
+                key={index}
+                className="group relative h-[300px] w-full bg-cover p-8 sm:h-[400px] md:h-full"
+                style={{ backgroundImage: `url(${section.bgImage})` }}
+              >
+                <div className="absolute inset-0 bg-blue-700/50 transition duration-300 group-hover:bg-black/70"></div>
+                <div className="relative z-10 flex h-full flex-col justify-between text-white">
+                  <div>
+                    <h3 className="text-3xl font-semibold">{section.title}</h3>
+                    <p className="mt-4">{section.description}</p>
+                  </div>
+                  <button
+                    className="btn-primary mt-8 self-end"
+                    aria-label={`Learn more about ${section.title}`}
+                  >
+                    Learn More
+                  </button>
                 </div>
-                <button
-                  className="btn-primary mt-8 self-end"
-                  aria-label="Learn more about Research & Analysis"
-                >
-                  Learn More
-                </button>
               </div>
-            </div>
-            {/* Research & Analysis Section */}
-            <div className="group relative h-[300px] w-full bg-[url('/images/industrial-landscape-building-crane-against-the-bl-8T3EXGK.png')] bg-cover p-8 sm:h-[400px] md:h-full">
-              <div className="absolute inset-0 bg-blue-700/50 transition duration-300 group-hover:bg-black/70"></div>
-              <div className="relative z-10 flex h-full flex-col justify-between text-white">
-                <div>
-                  <h3 className="text-3xl font-semibold">
-                    Industry Development
-                  </h3>
-                  <p className="mt-4">
-                    Stay ahead with the latest trends and developments in the
-                    construction industry.
-                  </p>
-                </div>
-                <button
-                  className="btn-primary mt-8 self-end"
-                  aria-label="Learn more about Industry Development"
-                >
-                  Learn More
-                </button>
-              </div>
-            </div>
-            {/* Production Launch Section */}
-            <div className="group relative h-[300px] w-full bg-[url('/images/industrial-landscape-building-crane-against-the-bl-8T3EXGK.png')] bg-cover p-8 sm:h-[400px] md:h-full">
-              <div className="absolute inset-0 bg-blue-700/50 transition duration-300 group-hover:bg-black/70"></div>
-              <div className="relative z-10 flex h-full flex-col justify-between text-white">
-                <div>
-                  <h3 className="text-3xl font-semibold">Production Launch </h3>
-                  <p className="mt-4">
-                    Get ready for a seamless launch with our comprehensive
-                    production strategies.
-                  </p>
-                </div>
-                <button
-                  className="btn-primary mt-8 self-end"
-                  aria-label="Learn more about Production Launch"
-                >
-                  Learn More
-                </button>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* Our Work */}
+      {/* Our Work Section */}
       <section className="py-10 sm:py-14">
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
           <p className="text-center text-sm font-semibold md:text-base">
@@ -196,43 +180,93 @@ export default function Home() {
           </h2>
           <div className="py-5">
             <div className="grid grid-cols-1 gap-5 md:grid-cols-3">
-              <div className="h-full">
-                <img
-                  src="/images/industrial-landscape-building-crane-against-the-bl-8T3EXGK.png"
-                  alt="Industrial Landscape"
-                  className="h-full w-full object-cover"
-                />
+              {/* First Column */}
+              <div>
+                <div className="group relative h-64 w-full bg-[url('/images/industrial-landscape-building-crane-against-the-bl-8T3EXGK.png')] bg-cover bg-center p-4 sm:h-80 md:h-96">
+                  <div className="absolute inset-0 transition duration-300 group-hover:bg-blue-700/50"></div>
+                  <div className="relative z-10 hidden h-full items-center justify-center text-center text-white group-hover:flex">
+                    <div>
+                      <h3 className="text-lg font-semibold sm:text-xl">
+                        Commercial
+                      </h3>
+                      <p className="mt-2 sm:mt-4">Benoit Architecture</p>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div className="flex h-full flex-col space-y-5">
-                <img
-                  src="/images/round-building-CGY4TZ5.png"
-                  alt="Round Building"
-                  className="h-1/2 w-full object-cover"
-                />
-                <img
-                  src="/images/xrdes-PHgbWpst8UA-unsplash.png"
-                  alt="Modern Interior"
-                  className="h-1/2 w-full object-cover"
-                />
+              <div>
+                <div className="group relative h-64 w-full bg-[url('/images/industrial-landscape-building-crane-against-the-bl-8T3EXGK.png')] bg-cover bg-center p-4 sm:h-80 md:h-96">
+                  <div className="absolute inset-0 transition duration-300 group-hover:bg-blue-700/50"></div>
+                  <div className="relative z-10 hidden h-full items-center justify-center text-center text-white group-hover:flex">
+                    <div>
+                      <h3 className="text-lg font-semibold sm:text-xl">
+                        Commercial
+                      </h3>
+                      <p className="mt-2 sm:mt-4">Benoit Architecture</p>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div className="flex h-full flex-col space-y-5">
-                <img
-                  src="/images/office-building-P6EY7D6.png"
-                  alt="Office Building"
-                  className="h-1/2 w-full object-cover"
-                />
-                <img
-                  src="/images/scott-webb-kAJE-3_4zHE-unsplash.png"
-                  alt="Architecture Detail"
-                  className="h-1/2 w-full object-cover"
-                />
+
+              {/* Second Column */}
+              <div>
+                <div className="group relative h-64 w-full bg-[url('/images/round-building-CGY4TZ5.png')] bg-cover p-4 sm:h-80 md:h-96">
+                  <div className="absolute inset-0 transition duration-300 group-hover:bg-blue-700/50"></div>
+                  <div className="relative z-10 hidden h-full items-center justify-center text-center text-white group-hover:flex">
+                    <div>
+                      <h3 className="text-lg font-semibold sm:text-xl">
+                        Commercial
+                      </h3>
+                      <p className="mt-2 sm:mt-4">Benoit Architecture</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div className="group relative h-64 w-full bg-[url('/images/xrdes-PHgbWpst8UA-unsplash.png')] bg-cover p-4 sm:h-80 md:h-96">
+                  <div className="absolute inset-0 transition duration-300 group-hover:bg-blue-700/50"></div>
+                  <div className="relative z-10 hidden h-full items-center justify-center text-center text-white group-hover:flex">
+                    <div>
+                      <h3 className="text-lg font-semibold sm:text-xl">
+                        Commercial
+                      </h3>
+                      <p className="mt-2 sm:mt-4">Benoit Architecture</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div className="group relative h-64 w-full bg-[url('/images/office-building-P6EY7D6.png')] bg-cover p-4 sm:h-80 md:h-96">
+                  <div className="absolute inset-0 transition duration-300 group-hover:bg-blue-700/50"></div>
+                  <div className="relative z-10 hidden h-full items-center justify-center text-center text-white group-hover:flex">
+                    <div>
+                      <h3 className="text-lg font-semibold sm:text-xl">
+                        Commercial
+                      </h3>
+                      <p className="mt-2 sm:mt-4">Benoit Architecture</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div className="group relative h-64 w-full bg-[url('/images/scott-webb-kAJE-3_4zHE-unsplash.png')] bg-cover p-4 sm:h-80 md:h-96">
+                  <div className="absolute inset-0 transition duration-300 group-hover:bg-blue-700/50"></div>
+                  <div className="relative z-10 hidden h-full items-center justify-center text-center text-white group-hover:flex">
+                    <div>
+                      <h3 className="text-lg font-semibold sm:text-xl">
+                        Commercial
+                      </h3>
+                      <p className="mt-2 sm:mt-4">Benoit Architecture</p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section>
+      {/* <section>
         <div>
           {" "}
           <img src="/images/Screenshot.png" alt="" className="flex-1" />
@@ -303,7 +337,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Testimonials Section */}
       <section className="bg-gray-50 py-10 sm:py-16 lg:py-24">
@@ -350,7 +384,7 @@ export default function Home() {
           <img
             src="/images/Mask.png"
             alt="Description of the image"
-            className="h-60 w-full rounded-lg shadow-lg content-center"
+            className="h-60 w-full content-center rounded-lg shadow-lg"
           />
         </div>
       </section>

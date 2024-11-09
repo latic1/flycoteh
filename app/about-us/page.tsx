@@ -4,7 +4,7 @@ const page = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative h-[20rem] sm:h-[30rem] lg:h-[40rem] w-full overflow-hidden">
+      <section className="relative h-[20rem] w-full overflow-hidden sm:h-[30rem] lg:h-[40rem]">
         <div className="absolute inset-0">
           <Image
             src="/images/Rectangle.png"
@@ -19,7 +19,7 @@ const page = () => {
           ></div>
         </div>
 
-        <div className="relative z-10 flex h-full items-center px-6 py-16 sm:py-32 text-white lg:w-2/3 lg:pl-24">
+        <div className="relative z-10 flex h-full items-center px-6 py-16 text-white sm:py-32 lg:w-2/3 lg:pl-24">
           <h1 className="text-3xl font-bold leading-tight sm:text-5xl xl:text-6xl">
             About Us
           </h1>
@@ -27,7 +27,7 @@ const page = () => {
       </section>
 
       {/* Statistics & Services Section */}
-      <section className="relative hidden sm:block bg-white pb-10 sm:pb-16 md:block lg:pb-24">
+      <section className="relative hidden bg-white pb-10 sm:block sm:pb-16 md:block lg:pb-24">
         <div className="container mx-auto flex max-w-4xl justify-end">
           <div className="border-t-8 border-blue-900 bg-white p-8 py-6 shadow-md lg:-mt-16 lg:px-10">
             <p>Call Us Today</p>
@@ -43,7 +43,7 @@ const page = () => {
             <div className="border">
               <div className="relative max-w-xs">
                 <img
-                  className="rounded-md object-cover w-full h-full"
+                  className="h-full w-full rounded-md object-cover"
                   src="https://cdn.rareblocks.xyz/collection/celebration/images/features/4/man-eating-noodles.jpg"
                   alt="Man eating noodles"
                 />
@@ -74,7 +74,7 @@ const page = () => {
       </section>
 
       {/* Call to Action Section */}
-      <section className="relative h-[40rem] sm:h-[45rem] lg:h-[50rem] w-full overflow-hidden">
+      <section className="relative h-[40rem] w-full overflow-hidden sm:h-[45rem] lg:h-[50rem]">
         <div className="absolute inset-0">
           <Image
             src="/images/Rectangle29.png"
@@ -89,7 +89,7 @@ const page = () => {
           ></div>
         </div>
 
-        <div className="relative z-10 flex h-full items-center justify-center py-16 sm:py-32 text-center text-white">
+        <div className="relative z-10 flex h-full items-center justify-center py-16 text-center text-white sm:py-32">
           <div className="w-full">
             <p className="mb-4 text-lg">Get a Quote</p>
             <h1 className="text-xl font-bold leading-tight sm:text-2xl xl:text-4xl">
@@ -99,16 +99,17 @@ const page = () => {
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry.
             </p>
-            <button className="mt-8 flex items-center rounded bg-black px-8 py-3 text-lg font-semibold text-white transition hover:bg-white hover:text-black focus:ring focus:ring-offset-2">
-              Learn more
-            </button>
+
+            <div className="flex justify-center md:justify-start">
+              <button className="btn-primary mt-8">Learn more</button>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Services Highlights Section */}
-      <section className="relative sm:block pb-10 sm:pb-16 md:block lg:pb-24">
-        <div className="container mx-auto flex max-w-4xl gap-5 px-6 lg:px-0">
+      <section className="relative pb-10 sm:block sm:pb-16 md:block lg:pb-24">
+        <div className="container mx-auto flex max-w-4xl flex-col gap-5 px-6 md:flex-row lg:px-0">
           {[1, 2, 3].map((num) => (
             <div key={num} className="flex gap-4 bg-white p-5 shadow-md">
               <div className="bg-black p-5 text-3xl font-black text-white">

@@ -31,7 +31,7 @@ const page = () => {
         <div className="container mx-auto flex max-w-4xl justify-end">
           <div className="border-t-8 border-blue-900 bg-white p-8 py-6 shadow-md lg:-mt-16 lg:px-10">
             <p>Call Us Today</p>
-            <h3 className="text-2xl font-semibold">+1 123 4567 789</h3>
+            <h3 className="text-2xl font-semibold">+233 303 966 546</h3>
           </div>
         </div>
       </section>
@@ -40,8 +40,8 @@ const page = () => {
       <section className="bg-white py-10 sm:py-16 lg:py-24">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid items-center gap-y-10 md:grid-cols-2 md:gap-x-10">
-            <div className="border">
-              <div className="relative max-w-xs">
+            <div className="flex justify-end">
+              <div className="relative">
                 <img
                   className="h-full w-full rounded-md object-cover"
                   src="https://cdn.rareblocks.xyz/collection/celebration/images/features/4/man-eating-noodles.jpg"
@@ -54,20 +54,31 @@ const page = () => {
                 About Us
               </p>
               <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
-                We’re providing the best customer service
+                Your trusted partner in quality and affordable real estate in
+                Ghana.
               </h2>
-              <div className="mt-4 bg-slate-200 p-10">
+              <div className="mt-4">
                 <p className="text-base leading-relaxed">
-                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                  amet sint. Velit officia consequat duis enim velit mollit.
-                  Exercitation veniam consequat sunt nostrud amet.
+                  Flycotec Company Limited is a leading real estate company in
+                  Ghana, with over a decade of experience providing top-notch
+                  services to clients. Registered under the Companies Act of
+                  1963, we specialize in Architectural Services, Land Surveying,
+                  Building Materials, Sale of Land, and Construction & Property
+                  Management. Our mission is to deliver quality, affordable
+                  housing in serene, well-planned communities.
                 </p>
-                <p className="mt-5 font-semibold">John Doe, CEO</p>
+                <p className="mt-5 text-base leading-relaxed">
+                  JOur commitment to customer satisfaction is at the core of
+                  everything we do. Through a collaborative approach and a focus
+                  on economical solutions, we provide our clients with
+                  impressive, high-quality communities where they can thrive.
+                  Our clients include prominent organizations and individuals
+                  across Ghana, including staff from U.S. Peace Corps, SSNIT,
+                  Electricity Company of Ghana, and TV3.
+                </p>
               </div>
 
-              <button className="mt-8 flex items-center rounded bg-black px-8 py-3 text-lg font-semibold text-white transition hover:bg-white hover:text-black focus:ring focus:ring-offset-2">
-                Learn more
-              </button>
+              <button className="btn-primary mt-8">Get Started Today</button>
             </div>
           </div>
         </div>
@@ -91,17 +102,18 @@ const page = () => {
 
         <div className="relative z-10 flex h-full items-center justify-center py-16 text-center text-white sm:py-32">
           <div className="w-full">
-            <p className="mb-4 text-lg">Get a Quote</p>
-            <h1 className="text-xl font-bold leading-tight sm:text-2xl xl:text-4xl">
-              Build Your Future Today
+            <p className="mb-4 text-lg">Request a Quote</p>
+            <h1 className="text-2xl font-bold leading-tight sm:text-3xl xl:text-5xl">
+              Build Your Vision with Flycotec
             </h1>
             <p className="mx-auto mt-6 max-w-2xl leading-relaxed">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
+              From groundbreaking designs to enduring infrastructure, we bring
+              your dreams to life with expertise and commitment. Let’s create a
+              legacy that stands the test of time.
             </p>
 
-            <div className="flex justify-center md:justify-start">
-              <button className="btn-primary mt-8">Learn more</button>
+            <div className="flex justify-center">
+              <button className="btn-primary mt-8"> Get Started Today</button>
             </div>
           </div>
         </div>

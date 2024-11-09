@@ -22,16 +22,15 @@ export default function Home() {
         <div className="relative z-10 flex h-full w-full items-center justify-start px-6 py-32 text-white lg:w-2/3 lg:pl-24">
           <div className="text-center md:text-left">
             <h1 className="text-3xl font-bold leading-tight sm:text-5xl xl:text-6xl">
-              Construction Solutions for Everyone
+              Building Your Dream Home in Ghana’s Most Prestigious Locations
             </h1>
             <p className="mt-6 max-w-lg text-lg leading-relaxed sm:text-xl">
-              Discover innovative construction solutions tailored for every
-              need. With expertise in project planning, infrastructure
-              management, and general contracting, we bring your vision to life
-              with precision.
+              Discover quality and affordable housing with Flycotec Company
+              Limited. We specialize in creating luxury communities that blend
+              serenity, security, and accessibility.
             </p>
             <div className="flex justify-center md:justify-start">
-              <button className="btn-primary mt-8">Learn more</button>
+              <button className="btn-primary mt-8">Get Started Today</button>
             </div>
           </div>
         </div>
@@ -40,33 +39,36 @@ export default function Home() {
       {/* Statistics & Services Section */}
       <section className="relative bg-white pb-10 sm:pb-16 md:pb-24">
         <div className="container mx-auto flex flex-wrap items-stretch justify-center gap-6 px-6 lg:justify-between lg:px-0">
+          {/* Completed Projects */}
           <div className="flex-1 bg-blue-900 p-10 text-center text-white">
             <h2 className="text-5xl font-bold">145</h2>
             <p className="mt-2 text-lg">Completed Projects</p>
           </div>
+          {/* Years of Experience */}
           <div className="flex-1 bg-black p-10 text-center text-white">
             <h2 className="text-5xl font-bold">25+</h2>
             <p className="mt-2 text-lg">Years of Experience</p>
           </div>
+          {/* Services Section */}
           <div className="relative flex w-full max-w-lg flex-col border-t-8 border-blue-900 bg-white p-8 py-6 shadow-md lg:-mt-40 lg:max-w-[400px] lg:px-10">
             <h3 className="text-2xl font-semibold">
-              We Construct and Manage Places and Infrastructures
+              Our Expertise in Construction & Management
             </h3>
             <div className="mt-8 space-y-3 lg:mt-4">
               <Service
                 iconSrc="/icons/general-contract-icon.png"
-                title="General Contract"
-                description="Quisque condimentum erat ac orci blandit, in sollicitudin tellus vestibulum."
+                title="General Contracting"
+                description="Providing end-to-end construction services with a focus on quality, timely delivery, and cost-effectiveness."
               />
               <Service
                 iconSrc="/icons/project-planning-icon.png"
-                title="Project Planning"
-                description="Quisque condimentum erat ac orci blandit, in sollicitudin tellus vestibulum."
+                title="Project Planning & Development"
+                description="Strategic project planning to ensure that every step of development is efficiently managed and executed."
               />
               <Service
                 iconSrc="/icons/infrastructure-management-icon.png"
                 title="Infrastructure Management"
-                description="Quisque condimentum erat ac orci blandit, in sollicitudin tellus vestibulum."
+                description="Maintaining and optimizing properties and infrastructure to ensure they remain functional, secure, and sustainable."
               />
             </div>
           </div>
@@ -75,22 +77,30 @@ export default function Home() {
 
       {/* About Us */}
       <section className="bg-white py-10 sm:py-16 lg:py-24">
-        <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid items-center gap-y-10 md:grid-cols-2 md:gap-x-20">
             <div>
               <p className="text-center text-sm font-semibold text-gray-700 md:text-left md:text-base">
                 About Us
               </p>
               <h2 className="text-center text-3xl font-bold leading-tight text-black sm:text-4xl md:text-left lg:text-5xl">
-                Grow business with Celebration.
+                Building Communities, Creating Value
               </h2>
               <p className="mt-4 text-center text-base leading-relaxed text-gray-600 md:text-left">
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                amet sint. Velit officia consequat duis enim velit mollit.
-                Exercitation veniam consequat sunt nostrud amet.
+                Flycotec Company Limited is a trusted real estate firm in Ghana,
+                with over a decade of experience in providing affordable,
+                quality housing and infrastructure solutions. We specialize in
+                property management, land sales, and construction, with a strong
+                focus on customer satisfaction, innovation, and economic
+                efficiency.
+              </p>
+              <p className="mt-2 text-center text-base leading-relaxed text-gray-600 md:text-left">
+                Our dedicated team of experts brings unparalleled knowledge and
+                commitment to every project, ensuring that we exceed
+                expectations and build thriving communities across Ghana.
               </p>
               <div className="mt-6 flex justify-center md:justify-start">
-                <button className="btn-primary">Learn more</button>
+                <button className="btn-primary">Learn More</button>
               </div>
             </div>
             <div className="flex justify-center pr-12 sm:pr-0 md:justify-end">
@@ -98,12 +108,12 @@ export default function Home() {
                 <img
                   className="rounded-md object-bottom"
                   src="https://cdn.rareblocks.xyz/collection/celebration/images/features/4/man-eating-noodles.jpg"
-                  alt=""
+                  alt="Flycotec team working"
                 />
                 <img
                   className="absolute -bottom-12 -right-12 origin-bottom-right scale-75 rounded-md"
                   src="https://cdn.rareblocks.xyz/collection/celebration/images/features/4/smiling-businessman.jpg"
-                  alt=""
+                  alt="Completed Flycotec project"
                 />
               </div>
             </div>
@@ -124,23 +134,23 @@ export default function Home() {
             {/* Research & Analysis Section */}
             {[
               {
-                title: "Research & Analysis",
+                title: "Architectural Services",
                 description:
-                  "Explore in-depth studies and innovative solutions tailored for your projects.",
+                  "Experience top-notch architectural designs and planning for residential, commercial, and industrial projects tailored to your vision.",
                 bgImage:
                   "/images/industrial-landscape-building-crane-against-the-bl-8T3EXGK.png",
               },
               {
                 title: "Industry Development",
                 description:
-                  "Stay ahead with the latest trends and developments in the construction industry.",
+                  "Benefit from Flycotec's expertise in construction trends and sustainable building practices to stay ahead in the industry.",
                 bgImage:
                   "/images/industrial-landscape-building-crane-against-the-bl-8T3EXGK.png",
               },
               {
-                title: "Production Launch",
+                title: "Construction Management",
                 description:
-                  "Get ready for a seamless launch with our comprehensive production strategies.",
+                  "Ensure your project’s success with our professional construction management services, covering everything from planning to final execution.",
                 bgImage:
                   "/images/industrial-landscape-building-crane-against-the-bl-8T3EXGK.png",
               },

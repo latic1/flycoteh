@@ -34,7 +34,7 @@ const page = () => {
         <div className="container mx-auto flex w-full max-w-4xl justify-center sm:justify-end">
           <div className="border-t-8 border-blue-900 bg-white p-6 py-4 text-center shadow-md sm:p-8 lg:-mt-16 lg:px-10">
             <p>Call Us Today</p>
-            <h3 className="text-xl font-semibold sm:text-2xl">+1 123 4567 789</h3>
+            <h3 className="text-xl font-semibold sm:text-2xl">+233 303 966 546</h3>
           </div>
         </div>
       </section>

@@ -14,7 +14,7 @@ export const Footer = () => {
           height={50}
         />
         <p className="mt-4">Contact Us</p>
-        <p className="">0303 966 546 | 0546 826 268 </p>
+        <p className="mb-2">0303 966 546 | 0546 826 268 </p>
         <p className="mb-4"> 0249 969 008 | 0533 831 959</p>
         <div className="flex flex-wrap gap-3">
           <Link href="https://facebook.com">{/* Facebook SVG icon */}</Link>
@@ -58,17 +58,17 @@ export const Footer = () => {
           <ul className="leading-8">
             <li>
               <a href="mailto:info@flycotec.com" className="hover:text-primary">
-                flycotec.gh.ltd@gmail.com
+                info@flycotec.com
               </a>
             </li>
-            <li>
+            {/* <li>
               <a
                 href="mailto:support@flycotec.com"
                 className="hover:text-primary"
               >
-                feeteclimited.gh@gmail.com
+                @flycotec.com
               </a>
-            </li>
+            </li> */}
           </ul>
         </div>
 

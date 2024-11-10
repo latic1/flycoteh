@@ -68,7 +68,7 @@ const page = () => {
                   housing in serene, well-planned communities.
                 </p>
                 <p className="mt-5 text-base leading-relaxed">
-                  JOur commitment to customer satisfaction is at the core of
+                  Our commitment to customer satisfaction is at the core of
                   everything we do. Through a collaborative approach and a focus
                   on economical solutions, we provide our clients with
                   impressive, high-quality communities where they can thrive.

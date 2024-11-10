@@ -9,11 +9,11 @@ export const Navber = () => {
   return (
     <header className="container mx-auto my-3 px-4">
       {/* Top Nav Links */}
-      <div className="flex flex-col items-center justify-between border-b py-2 sm:flex-row">
+      {/* <div className="flex flex-col items-center justify-between border-b py-2 sm:flex-row">
         <div className="flex gap-4 text-sm uppercase">
-          {/* <Link href="/support" aria-label="Support">Support</Link>
+          <Link href="/support" aria-label="Support">Support</Link>
           <Link href="/partners" aria-label="Partners">Partners</Link>
-          <Link href="/careers" aria-label="Careers">Careers</Link> */}
+          <Link href="/careers" aria-label="Careers">Careers</Link>
         </div>
         <div className="mt-3 flex gap-3 sm:mt-0">
           <Link href="">
@@ -70,7 +70,7 @@ export const Navber = () => {
             <span className="icon-[mdi--instagram]"></span>
           </Link>
         </div>
-      </div>
+      </div> */}
 
       {/* Main Navigation */}
       <nav className="flex items-center justify-between py-4">

@@ -44,11 +44,11 @@ export const Footer = () => {
                 Our Services
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link href="/pricing" className="hover:text-primary">
                 Pricing
               </Link>
-            </li>
+            </li> */}
           </ul>
         </div>
 

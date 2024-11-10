@@ -56,17 +56,17 @@ export default function Home() {
             </h3>
             <div className="mt-8 space-y-3 lg:mt-4">
               <Service
-                iconSrc="/icons/general-contract-icon.png"
+                iconSrc="/icons/Shape.svg"
                 title="General Contracting"
                 description="Providing end-to-end construction services with a focus on quality, timely delivery, and cost-effectiveness."
               />
               <Service
-                iconSrc="/icons/project-planning-icon.png"
+                iconSrc="/icons/Shape.png"
                 title="Project Planning & Development"
                 description="Strategic project planning to ensure that every step of development is efficiently managed and executed."
               />
               <Service
-                iconSrc="/icons/infrastructure-management-icon.png"
+                iconSrc="/icons/measuring-tool.svg"
                 title="Infrastructure Management"
                 description="Maintaining and optimizing properties and infrastructure to ensure they remain functional, secure, and sustainable."
               />
@@ -205,7 +205,7 @@ export default function Home() {
                 </div>
               </div>
               <div>
-                <div className="group relative h-64 w-full bg-[url('/images/industrial-landscape-building-crane-against-the-bl-8T3EXGK.png')] bg-cover bg-center p-4 sm:h-80 md:h-96">
+                <div className="group relative h-64 w-full bg-[url('/images/IMG-20231002-WA0003.jpg')] bg-cover bg-center p-4 sm:h-80 md:h-96">
                   <div className="absolute inset-0 transition duration-300 group-hover:bg-blue-700/50"></div>
                   <div className="relative z-10 hidden h-full items-center justify-center text-center text-white group-hover:flex">
                     <div>
@@ -220,7 +220,7 @@ export default function Home() {
 
               {/* Second Column */}
               <div>
-                <div className="group relative h-64 w-full bg-[url('/images/round-building-CGY4TZ5.png')] bg-cover p-4 sm:h-80 md:h-96">
+                <div className="group relative h-64 w-full bg-[url('/images/IMG-20240804-WA0015.jpg')] bg-cover p-4 sm:h-80 md:h-96">
                   <div className="absolute inset-0 transition duration-300 group-hover:bg-blue-700/50"></div>
                   <div className="relative z-10 hidden h-full items-center justify-center text-center text-white group-hover:flex">
                     <div>
@@ -233,7 +233,7 @@ export default function Home() {
                 </div>
               </div>
               <div>
-                <div className="group relative h-64 w-full bg-[url('/images/xrdes-PHgbWpst8UA-unsplash.png')] bg-cover p-4 sm:h-80 md:h-96">
+                <div className="group relative h-64 w-full bg-[url('/images/IMG-20230818-WA0002.jpg')] bg-cover p-4 sm:h-80 md:h-96">
                   <div className="absolute inset-0 transition duration-300 group-hover:bg-blue-700/50"></div>
                   <div className="relative z-10 hidden h-full items-center justify-center text-center text-white group-hover:flex">
                     <div>
@@ -246,7 +246,7 @@ export default function Home() {
                 </div>
               </div>
               <div>
-                <div className="group relative h-64 w-full bg-[url('/images/office-building-P6EY7D6.png')] bg-cover p-4 sm:h-80 md:h-96">
+                <div className="group relative h-64 w-full bg-[url('/images/IMG-20231031-WA0008.jpg')] bg-cover p-4 sm:h-80 md:h-96">
                   <div className="absolute inset-0 transition duration-300 group-hover:bg-blue-700/50"></div>
                   <div className="relative z-10 hidden h-full items-center justify-center text-center text-white group-hover:flex">
                     <div>
@@ -259,7 +259,7 @@ export default function Home() {
                 </div>
               </div>
               <div>
-                <div className="group relative h-64 w-full bg-[url('/images/scott-webb-kAJE-3_4zHE-unsplash.png')] bg-cover p-4 sm:h-80 md:h-96">
+                <div className="group relative h-64 w-full bg-[url('/images/IMG-20231002-WA0004.jpg')] bg-cover p-4 sm:h-80 md:h-96">
                   <div className="absolute inset-0 transition duration-300 group-hover:bg-blue-700/50"></div>
                   <div className="relative z-10 hidden h-full items-center justify-center text-center text-white group-hover:flex">
                     <div>
@@ -411,7 +411,7 @@ interface IService {
 function Service({ iconSrc, title, description }: IService) {
   return (
     <div className="flex items-start space-x-4">
-      <Image src={iconSrc} width={24} height={24} alt={`${title} icon`} />
+      <Image src={iconSrc} width={30} height={30} alt={`${title} icon`} />
       <div>
         <p className="text-lg font-semibold">{title}</p>
         <p className="text-sm text-gray-600">{description}</p>

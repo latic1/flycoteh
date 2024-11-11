@@ -22,5 +22,5 @@ body {
 
 
 .btn-primary {
-  @apply flex items-center rounded bg-black px-8 py-3 text-lg font-semibold text-white transition hover:bg-white hover:text-black focus:ring focus:ring-offset-2;
+  @apply flex items-center rounded bg-black px-8 py-3 text-lg font-semibold text-white transition duration-300 hover:bg-white hover:text-black focus:ring focus:ring-offset-2;
 }

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const page = () => {
   return (
@@ -29,7 +30,7 @@ const page = () => {
       {/* Statistics & Services Section */}
       <section className="relative hidden bg-white pb-10 sm:block sm:pb-16 md:block lg:pb-24">
         <div className="container mx-auto flex max-w-4xl justify-end">
-          <div className="border-t-8 border-blue-900 bg-white p-8 py-6 shadow-md lg:-mt-16 lg:px-10">
+          <div className="border-t-8 border-blue-900 bg-white p-8 py-6 shadow-md md:-mt-16 lg:px-10">
             <p>Call Us Today</p>
             <h3 className="text-2xl font-semibold">+233 303 966 546</h3>
           </div>
@@ -37,7 +38,7 @@ const page = () => {
       </section>
 
       {/* About Us Section */}
-      <section className="bg-white py-10 sm:py-16 lg:py-24">
+      <section className="py-10 sm:py-16 lg:py-24">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid items-center gap-y-10 md:grid-cols-2 md:gap-x-10">
             <div className="flex justify-end">
@@ -53,7 +54,7 @@ const page = () => {
               <p className="mb-4 text-center text-sm font-semibold md:text-left md:text-base">
                 About Us
               </p>
-              <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
+              <h2 className="text-2xl font-bold leading-tight sm:text-3xl lg:text-5xl">
                 Your trusted partner in quality and affordable real estate in
                 Ghana.
               </h2>
@@ -77,8 +78,9 @@ const page = () => {
                   Electricity Company of Ghana, and TV3.
                 </p>
               </div>
-
-              <button className="btn-primary mt-8">Get Started Today</button>
+              <Link href="/contact-us">
+                <button className="btn-primary mt-8">Get Started Today</button>
+              </Link>
             </div>
           </div>
         </div>
@@ -113,7 +115,9 @@ const page = () => {
             </p>
 
             <div className="flex justify-center">
-              <button className="btn-primary mt-8"> Get Started Today</button>
+              <Link href="/contact-us">
+                <button className="btn-primary mt-8"> Get Started Today</button>
+              </Link>
             </div>
           </div>
         </div>

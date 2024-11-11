@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -30,7 +31,10 @@ export default function Home() {
               serenity, security, and accessibility.
             </p>
             <div className="flex justify-center md:justify-start">
-              <button className="btn-primary mt-8">Get Started Today</button>
+              <Link href="/contact-us">
+                {" "}
+                <button className="btn-primary mt-8">Get Started Today</button>
+              </Link>
             </div>
           </div>
         </div>
@@ -77,13 +81,13 @@ export default function Home() {
 
       {/* About Us */}
       <section className="bg-white py-10 sm:py-16 lg:py-24">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid items-center gap-y-10 md:grid-cols-2 md:gap-x-20">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid items-center gap-y-10 md:grid-cols-2 md:gap-x-10">
             <div>
               <p className="text-center text-sm font-semibold text-gray-700 md:text-left md:text-base">
                 About Us
               </p>
-              <h2 className="text-center text-3xl font-bold leading-tight text-black sm:text-4xl md:text-left lg:text-5xl">
+              <h2 className="text-center text-2xl font-bold leading-tight text-black sm:text-3xl md:text-left lg:text-5xl">
                 Building Communities, Creating Value
               </h2>
               <p className="mt-4 text-center text-base leading-relaxed text-gray-600 md:text-left">
@@ -100,10 +104,13 @@ export default function Home() {
                 expectations and build thriving communities across Ghana.
               </p>
               <div className="mt-6 flex justify-center md:justify-start">
+              <Link href="/contact-us">
+
                 <button className="btn-primary">Learn More</button>
+                </Link>
               </div>
             </div>
-            <div className="flex justify-center pr-12 sm:pr-0 md:justify-end">
+            <div className="flex w-full justify-center sm:pr-0 md:justify-start">
               <div className="relative mb-12 max-w-xs">
                 <img
                   className="rounded-md object-bottom"
@@ -111,7 +118,7 @@ export default function Home() {
                   alt="Flycotec team working"
                 />
                 <img
-                  className="absolute -bottom-12 -right-12 origin-bottom-right scale-75 rounded-md"
+                  className="absolute -bottom-12 -right-10 origin-bottom-right scale-75 rounded-md"
                   src="https://cdn.rareblocks.xyz/collection/celebration/images/features/4/smiling-businessman.jpg"
                   alt="Completed Flycotec project"
                 />
@@ -124,10 +131,10 @@ export default function Home() {
       {/* Section with Background Images and Content */}
       <section className="bg-white py-10 sm:py-16 lg:py-24">
         <div className="">
-          <div className="grid h-full grid-cols-1 gap-5 md:grid-cols-5 md:gap-0">
+          <div className="grid h-full grid-cols-1 gap-5 sm:grid-cols-3 md:gap-0 lg:grid-cols-5">
             {/* Background Image for Large Screens */}
             <div
-              className="col-span-2 hidden h-[500px] bg-[url('/images/professional-architect-woman-standing-outdoors-NDAEJH5.jpg')] bg-cover bg-center md:block"
+              className="col-span-2 hidden h-[500px] bg-[url('/images/professional-architect-woman-standing-outdoors-NDAEJH5.jpg')] bg-cover bg-center lg:block"
               aria-hidden="true"
             ></div>
 

@@ -68,16 +68,16 @@ const page = () => {
           </div>
 
           {/* Contact Info */}
-          <div className="mt-10 flex flex-col gap-5 md:flex-row md:gap-10">
-            <div className="border-l-8 border-blue-900 bg-white p-8 py-6 shadow-md lg:px-10">
+          <div className="mt-10 flex flex-col gap-5 md:flex-row lg:gap-10">
+            <div className="w-2/4 border-l-8 border-blue-900 bg-white p-3 py-6 shadow-md lg:px-10">
               <p>Company Address</p>
-              <h3 className="text-2xl font-semibold">
+              <h3 className="font-semibold lg:text-2xl">
                 Themeforest, Envato HQ 24 Fifth st., Los Angeles, USA
               </h3>
             </div>
 
             <div className="flex gap-4 bg-white p-5 shadow-md">
-              <div className="bg-black p-5 text-3xl font-black text-white">
+              <div className="hidden bg-black p-5 text-3xl font-black text-white lg:block">
                 <img
                   src="/icons/ic--outline-local-phone.svg"
                   alt="Phone Icon"
@@ -85,19 +85,18 @@ const page = () => {
               </div>
               <div>
                 <p className="font-bold text-blue-600">Company Phones</p>
-                <p>Etiam ac leo at quam aliquet</p>
-                <p>Etiam ac leo at quam aliquet</p>
+                <p>0303 966 546</p>
+                <p>0546 826 268</p>
               </div>
             </div>
 
             <div className="flex gap-4 bg-white p-5 shadow-md">
-              <div className="bg-black p-5 text-3xl font-black text-white">
+              <div className="hidden bg-black p-5 text-3xl font-black text-white lg:block">
                 <img src="/icons/uiw--message.svg" alt="Message Icon" />
               </div>
               <div>
-                <p className="font-bold text-blue-600">Dustro Emails</p>
-                <p>Etiam ac leo at quam aliquet</p>
-                <p>Etiam ac leo at quam aliquet</p>
+                <p className="font-bold text-blue-600">Company Emails</p>
+                <p>info@flycotec.com</p>
               </div>
             </div>
           </div>

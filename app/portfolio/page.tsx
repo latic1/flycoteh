@@ -32,7 +32,7 @@ const page = () => {
       {/* Statistics & Services Section */}
       <section className="relative bg-white pb-10 sm:pb-16 md:block lg:pb-24">
         <div className="container mx-auto flex w-full max-w-4xl justify-center sm:justify-end">
-          <div className="border-t-8 border-blue-900 bg-white p-6 py-4 text-center shadow-md sm:p-8 lg:-mt-16 lg:px-10">
+          <div className="border-t-8 border-blue-900 bg-white p-6 py-4 text-center shadow-md sm:p-8 md:-mt-16 lg:px-10">
             <p>Call Us Today</p>
             <h3 className="text-xl font-semibold sm:text-2xl">+233 303 966 546</h3>
           </div>
